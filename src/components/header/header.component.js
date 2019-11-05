@@ -13,10 +13,10 @@ const Header = ({ currentUser }) => (
       <Logo className='logo' />
     </Link>
     <div className='options'>
-      <Link className='options' to='/shop'>
+      <Link className='option' to='/shop'>
         SHOP
       </Link>
-      <Link className='options' to='/shop'>
+      <Link className='option' to='/shop'>
         CONTACT
       </Link>
       {currentUser ? (
@@ -24,7 +24,9 @@ const Header = ({ currentUser }) => (
           SIGN OUT
         </div>
       ) : (
-        <Link className='option' to='/signin'></Link>
+        <Link className='option' to='/signin'>
+          SIGN IN
+        </Link>
       )}
     </div>
   </div>
