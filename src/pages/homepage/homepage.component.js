@@ -3,13 +3,13 @@ import React from 'react';
 import Directory from '../../components/directory/directory.component';
 import videoBackground from '../../assets/models.mp4';
 
-import { HomePageContainer, videoContainer } from './homepage.styles';
+import { HomePageContainer, VideoContainer } from './homepage.styles';
 
 import './homepage.scss';
 
 const HomePage = () => (
   <HomePageContainer>
-    <videoContainer>
+    <VideoContainer>
       <video
         src={videoBackground}
         autoPlay={true}
@@ -17,7 +17,7 @@ const HomePage = () => (
         loop={true}
         className='video'
       />
-    </videoContainer>
+    </VideoContainer>
     <Directory />
   </HomePageContainer>
 );

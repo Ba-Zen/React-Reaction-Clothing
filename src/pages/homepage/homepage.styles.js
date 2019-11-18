@@ -6,16 +6,14 @@ export const HomePageContainer = styled.div`
   align-items: center;
 `;
 
-export const videoContainer = styled.div`
-  height: 20vh;
+export const VideoContainer = styled.div`
   width: auto;
   overflow: hidden;
-  position: absolute;
   z-index: 1;
   top: 2.5%;
 `;
 
-export const heroVideo = styled.video`
+export const HeroVideo = styled.video`
   filter: brightness(50%);
   width: 100%;
   object-fit: cover;
